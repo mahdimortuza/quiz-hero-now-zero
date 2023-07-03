@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debugging blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body class="container">
+    <section>
+        <h1>Answer of the questions.</h1>
+    <h2>1. What is the difference among map, filter, forEach and find?</h2>
+    <p><strong>Answer:</strong> 
+        In JavaScript, map(), filter(), forEach(), and find() are all array methods used to manipulate arrays. Here are the differences among them:
+        <ul>
+            <li>map() - creates a new array with the results of calling a provided function on every element in the original array. It returns a new array with the same length as the original array.</li>
+            <li>filter() - creates a new array with all the elements that pass the test provided by a callback function. It returns a new array that may have fewer elements than the original array.</li>
+            <li>forEach() - calls a provided function once for each element in the array, but it doesn't create a new array. It simply executes a function on each item in the array.</li>
+            <li>find() - returns the value of the first element in the array that satisfies the provided testing function. If no element satisfies the function, it returns undefined.</li>
+        </ul>
+    </p>
+
+
+    <h2>2. What is the difference among local storage, session storage and cookies?</h2>
+    <p><strong>Answer:</strong> 
+        <ul>
+            <li> Local storage is used save data on the browser. This data is not accessible from another browser. 
+                Local storage is more suitable for storing larger amounts of data that only need to be accessed by the client. </li>
+            <li> Session storage is used to store data of a ongoing session. If the user close a session then all of the data are gone.</li>
+            <li>Cookies are more suitable for storing small amounts of data that need to be accessed by both the client and server.</li>
+        </ul>        
+    </p>
+
+    <h2>3. What is event loop and how does it work? </h2>
+    <p><strong>Answer:</strong> 
+        The event loop is a crucial part of JavaScript's runtime that handles the execution of asynchronous code. It's responsible for managing the execution of code in a way that maximizes efficiency and responsiveness.      
+    </p>
+    
+
+
+
+
+    <h1 style="margin-top: 80px;">Functions are eplained on the down below.</h1>
+    <h2>1. quizTimmer function</h2>
+    <p>The quizTimer function is used in a quiz application to handle a timer. It takes a boolean parameter to <br>
+        dismiss the timer and sets up an interval to update an HTML element with the elapsed time. The function formats the <br>
+        time as a string with leading zeros and changes the text color of the HTML element every 60 seconds to create a flashing effect. <br>
+        The interval function runs every second until the clearInterval method is called. The quizTimer function is an essential component <br>
+        of the quiz application, allowing users to keep track of their progress and providing a visual cue for the time remaining.</p>
+    
+    
+    <h2>2. chooseQuiz function</h2>
+    <p>The chooseQuiz function is used in a quiz application to handle the selection of a quiz answer. It takes two parameters, <br>
+         index which indicates the index of the quiz question in the quizData array, and givenAns which is the answer selected by the user.<br>
+
+        The function checks if the selected answer already exists in the answers array using the find method. If it exists, the function <br>
+        finds the index of the existing answer in the answers array and replaces it with a new answer object that includes the selected answer. <br>
+        If it doesn't exist, the function adds a new answer object to the answers array with the selected answer and displays the updated answer list <br>
+        using the displayAnswers function.
+        
+        Overall, the chooseQuiz function allows users to select and update their quiz answers and displays their selections for review.</p>
+
+    </section>
+</body>
+</html>
